@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop - Geografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h2>🌍 Encaixe o País no Continente</h2>
+
+        <!-- Área onde os países começam -->
+        <div class="countries-container" id="countries-container">
+            <div class="country" draggable="true" id="br" data-continent="south-america">Brasil <span class="badge">BR</span></div>
+            <div class="country" draggable="true" id="jp" data-continent="asia">Japão <span class="badge">JP</span></div>
+            <div class="country" draggable="true" id="fr" data-continent="europe">França <span class="badge">FR</span></div>
+        </div>
+
+        <!-- Áreas de soltura (Continentes) -->
+        <div class="continents-container">
+            <div class="continent" data-continent="south-america">
+                <span class="continent-label">América do Sul</span>
+            </div>
+            <div class="continent" data-continent="europe">
+                <span class="continent-label">Europa</span>
+            </div>
+            <div class="continent" data-continent="asia">
+                <span class="continent-label">Ásia</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
